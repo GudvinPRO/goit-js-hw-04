@@ -3,20 +3,15 @@ let sum = Object.values(products);
 let sum2 = 0;
 for (const sum1 of sum) {
   sum2 += sum1;
- }
-
- if (sum2 < containerSize) {
-  return true;
- } else {
-  return false;
- }
 }
 
-// if (sum < containerSize) {
-//   return true;
-// } else {
-//   return false;
-// }
+if (sum2 < containerSize) {
+  return true;
+} else {
+  return false;
+}
+}
+
 
 
 console.log(
