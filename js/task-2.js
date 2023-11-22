@@ -1,16 +1,22 @@
 function calcAverageCalories(days) {
    let numbers = Object.keys(days);
 
+
    let res = 0;
 
-   for (const key of Object.values(days)) {
-      
-      res += key.calories;
-    
-  }
+   if (numbers.length) {
+      for (const key of Object.values(days)) {
+        res += key.calories;
+      }
+
+      return res / numbers.length;
+  
+      } else {
+        res = 0;
+      }  
 
 
-   return res / numbers.length;
+   return res;
    
 }
 

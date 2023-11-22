@@ -1,40 +1,24 @@
 const profile = {
-  username: "Jacob",
-  playTime: 300,
-
-<<<<<<< Updated upstream
-  changeUsername(newUsername) {
-    this.username = newUsername;
-  },
-
-  updatePlayTime(newTime) {
-    this.playTime += newTime; 
-  },
+    username: "Jacob",
+    playTime: 300,
   
-  getInfo() {
-=======
-  changeUsername(nemUsername) {
-
-    if(profile.username != nemUsername){
-      profile.username = nemUsername;
-      return profile.username;
-    }
+    changeUsername(newUsername) {
+      this.username = newUsername;
+    },
+  
+    updatePlayTime(newTime) {
+      this.playTime += newTime; 
+    },
     
-  }
-
-  getInfo() {   
->>>>>>> Stashed changes
-    return `${profile.username} has ${profile.playTime} active hours!`;
-  }
-
-};
+    getInfo() {
+      return `${profile.username} has ${profile.playTime} active hours!`
+    }
+  
+  };
 
 
 
-
-
-
-
+  
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
 profile.changeUsername("Marco");
