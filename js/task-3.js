@@ -2,6 +2,7 @@ const profile = {
   username: "Jacob",
   playTime: 300,
 
+<<<<<<< Updated upstream
   changeUsername(newUsername) {
     this.username = newUsername;
   },
@@ -11,6 +12,18 @@ const profile = {
   },
   
   getInfo() {
+=======
+  changeUsername(nemUsername) {
+
+    if(profile.username != nemUsername){
+      profile.username = nemUsername;
+      return profile.username;
+    }
+    
+  }
+
+  getInfo() {   
+>>>>>>> Stashed changes
     return `${profile.username} has ${profile.playTime} active hours!`;
   }
 
